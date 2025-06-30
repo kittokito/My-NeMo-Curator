@@ -26,9 +26,9 @@ def pre_imports() -> None:
 
 
 def main(args: argparse.Namespace) -> None:
-    dataset_dir = "/path/to/data"
+    dataset_dir = "/home/ubuntu/NeMo-Curator/data/raw/plc_normal_04-1.jsonl"
     log_dir = "./"
-    output_dir = "./"
+    output_dir = "/home/ubuntu/NeMo-Curator/data/deduped"
     dataset_id_field = "id"
     dataset_text_field = "text"
     client = get_client(**ArgumentHelper.parse_client_args(args))
